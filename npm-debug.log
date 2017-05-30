@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'mongo-hacker' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData mongo-hacker
+8 silly fetchNamedPackageData mongo-hacker
+9 silly mapToRegistry name mongo-hacker
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/mongo-hacker
+13 verbose get https://registry.npmjs.org/mongo-hacker not expired, no request
+14 silly install normalizeTree
+15 silly loadCurrentTree Finishing
+16 silly loadIdealTree Starting
+17 silly install loadIdealTree
+18 silly cloneCurrentTree Starting
+19 silly install cloneCurrentTreeToIdealTree
+20 silly cloneCurrentTree Finishing
+21 silly loadShrinkwrap Starting
+22 silly install loadShrinkwrap
+23 silly loadShrinkwrap Finishing
+24 silly loadAllDepsIntoIdealTree Starting
+25 silly install loadAllDepsIntoIdealTree
+26 silly resolveWithNewModule mongo-hacker@0.0.15 checking installable status
+27 silly cache add args [ 'mongo-hacker', null ]
+28 verbose cache add spec mongo-hacker
+29 silly cache add parsed spec Result {
+29 silly cache add   raw: 'mongo-hacker',
+29 silly cache add   scope: null,
+29 silly cache add   name: 'mongo-hacker',
+29 silly cache add   rawSpec: '',
+29 silly cache add   spec: '*',
+29 silly cache add   type: 'range' }
+30 silly addNamed mongo-hacker@*
+31 verbose addNamed "*" is a valid semver range for mongo-hacker
+32 silly addNameRange { name: 'mongo-hacker', range: '*', hasData: false }
+33 silly mapToRegistry name mongo-hacker
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry uri https://registry.npmjs.org/mongo-hacker
+37 verbose addNameRange registry:https://registry.npmjs.org/mongo-hacker not in flight; fetching
+38 verbose get https://registry.npmjs.org/mongo-hacker not expired, no request
+39 silly addNameRange number 2 { name: 'mongo-hacker', range: '*', hasData: true }
+40 silly addNameRange versions [ 'mongo-hacker',
+40 silly addNameRange   [ '0.0.3',
+40 silly addNameRange     '0.0.4',
+40 silly addNameRange     '0.0.5',
+40 silly addNameRange     '0.0.8',
+40 silly addNameRange     '0.0.9',
+40 silly addNameRange     '0.0.10',
+40 silly addNameRange     '0.0.11',
+40 silly addNameRange     '0.0.12',
+40 silly addNameRange     '0.0.13',
+40 silly addNameRange     '0.0.14',
+40 silly addNameRange     '0.0.15' ] ]
+41 silly addNamed mongo-hacker@0.0.15
+42 verbose addNamed "0.0.15" is a plain semver version for mongo-hacker
+43 silly cache afterAdd mongo-hacker@0.0.15
+44 verbose afterAdd /home/vagrant/.npm/mongo-hacker/0.0.15/package/package.json not in flight; writing
+45 verbose afterAdd /home/vagrant/.npm/mongo-hacker/0.0.15/package/package.json written
+46 silly loadAllDepsIntoIdealTree Finishing
+47 silly idealTree:prePrune /usr/lib
+47 silly idealTree:prePrune └── mongo-hacker@0.0.15
+48 silly loadIdealTree Finishing
+49 silly currentTree /usr/lib
+50 silly idealTree /usr/lib
+50 silly idealTree └── mongo-hacker@0.0.15
+51 silly generateActionsToTake Starting
+52 silly install generateActionsToTake
+53 silly generateActionsToTake Finishing
+54 silly diffTrees action count 1
+55 silly diffTrees add mongo-hacker@0.0.15
+56 silly decomposeActions action count 8
+57 silly decomposeActions fetch mongo-hacker@0.0.15
+58 silly decomposeActions extract mongo-hacker@0.0.15
+59 silly decomposeActions preinstall mongo-hacker@0.0.15
+60 silly decomposeActions build mongo-hacker@0.0.15
+61 silly decomposeActions install mongo-hacker@0.0.15
+62 silly decomposeActions postinstall mongo-hacker@0.0.15
+63 silly decomposeActions test mongo-hacker@0.0.15
+64 silly decomposeActions finalize mongo-hacker@0.0.15
+65 silly executeActions Starting
+66 silly install executeActions
+67 silly doSerial global-install 0
+68 silly doParallel fetch 1
+69 verbose lock using /home/vagrant/.npm/_locks/staging-a072192f34a17023.lock for /usr/lib/node_modules/.staging
+70 silly doParallel extract 1
+71 silly extract mongo-hacker
+72 verbose unbuild lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919
+73 silly gentlyRm /usr/lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919 is being purged from base /usr
+74 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919
+75 verbose tar unpack /home/vagrant/.npm/mongo-hacker/0.0.15/package.tgz
+76 verbose tar unpacking to /usr/lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919
+77 silly gentlyRm /usr/lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919 is being purged
+78 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919
+79 silly gunzTarPerm modes [ '755', '644' ]
+80 silly gunzTarPerm extractEntry package.json
+81 silly gunzTarPerm extractEntry .npmignore
+82 silly gunzTarPerm extractEntry README.md
+83 silly gunzTarPerm extractEntry LICENSE
+84 silly gunzTarPerm extractEntry base.js
+85 silly gunzTarPerm extractEntry config.js
+86 silly gunzTarPerm extractEntry Makefile
+87 silly gunzTarPerm extractEntry hacks/aggregation.js
+88 silly gunzTarPerm extractEntry hacks/count.js
+89 silly gunzTarPerm extractEntry hacks/dbref.js
+90 silly gunzTarPerm extractEntry hacks/find_and_modify.js
+91 silly gunzTarPerm extractEntry hacks/common.js
+92 silly gunzTarPerm extractEntry hacks/index_paranoia.js
+93 silly gunzTarPerm extractEntry hacks/old_aggregation.js
+94 silly gunzTarPerm extractEntry hacks/prompt.js
+95 silly gunzTarPerm extractEntry hacks/ps.js
+96 silly gunzTarPerm extractEntry hacks/randomise.js
+97 silly gunzTarPerm extractEntry hacks/color.js
+98 silly gunzTarPerm extractEntry hacks/sh_status.js
+99 silly gunzTarPerm extractEntry hacks/cmd_search.js
+100 silly gunzTarPerm extractEntry hacks/show.js
+101 silly gunzTarPerm extractEntry hacks/auto_complete.js
+102 silly gunzTarPerm extractEntry hacks/uuid.js
+103 silly gunzTarPerm extractEntry hacks/api.js
+104 silly gunzTarPerm extractEntry hacks/verbose.js
+105 silly gunzTarPerm extractEntry hacks/helpers.js
+106 silly doParallel preinstall 1
+107 silly preinstall mongo-hacker /usr/lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919
+108 info lifecycle mongo-hacker@0.0.15~preinstall: mongo-hacker@0.0.15
+109 silly lifecycle mongo-hacker@0.0.15~preinstall: no script for preinstall, continuing
+110 silly doReverseSerial remove 0
+111 silly doSerial move 0
+112 silly doSerial finalize 1
+113 silly finalize /usr/lib/node_modules/mongo-hacker
+114 silly doSerial build 1
+115 silly build mongo-hacker
+116 info linkStuff mongo-hacker@0.0.15
+117 silly linkStuff mongo-hacker@0.0.15 has /usr/lib/node_modules as its parent node_modules
+118 silly linkStuff mongo-hacker@0.0.15 is part of a global install
+119 silly linkStuff mongo-hacker@0.0.15 is installed into a global node_modules
+120 silly linkStuff mongo-hacker@0.0.15 is installed into the top-level global node_modules
+121 verbose linkBins mongo-hacker@0.0.15
+122 verbose linkMans mongo-hacker@0.0.15
+123 verbose rebuildBundles mongo-hacker@0.0.15
+124 silly doSerial global-link 0
+125 silly doParallel update-linked 0
+126 silly doSerial install 1
+127 silly install mongo-hacker /usr/lib/node_modules/.staging/mongo-hacker-38ddc0e80318854ee8158eda12683919
+128 info lifecycle mongo-hacker@0.0.15~install: mongo-hacker@0.0.15
+129 verbose lifecycle mongo-hacker@0.0.15~install: unsafe-perm in lifecycle false
+130 verbose lifecycle mongo-hacker@0.0.15~install: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/usr/lib/node_modules/mongo-hacker/node_modules/.bin:/usr/lib/node_modules/.bin:/home/vagrant/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+131 verbose lifecycle mongo-hacker@0.0.15~install: CWD: /usr/lib/node_modules/mongo-hacker
+132 silly lifecycle mongo-hacker@0.0.15~install: Args: [ '-c', 'make install' ]
+133 silly lifecycle mongo-hacker@0.0.15~install: Returned: code: 2  signal: null
+134 info lifecycle mongo-hacker@0.0.15~install: Failed to exec install script
+135 verbose unlock done using /home/vagrant/.npm/_locks/staging-a072192f34a17023.lock for /usr/lib/node_modules/.staging
+136 silly rollbackFailedOptional Starting
+137 silly rollbackFailedOptional Finishing
+138 silly runTopLevelLifecycles Starting
+139 silly runTopLevelLifecycles Finishing
+140 silly install printInstalled
+141 verbose stack Error: mongo-hacker@0.0.15 install: `make install`
+141 verbose stack Exit status 2
+141 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+141 verbose stack     at emitTwo (events.js:87:13)
+141 verbose stack     at EventEmitter.emit (events.js:172:7)
+141 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+141 verbose stack     at emitTwo (events.js:87:13)
+141 verbose stack     at ChildProcess.emit (events.js:172:7)
+141 verbose stack     at maybeClose (internal/child_process.js:818:16)
+141 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+142 verbose pkgid mongo-hacker@0.0.15
+143 verbose cwd /home/vagrant/Code/treehouse-mongo-basics
+144 error Linux 3.19.0-25-generic
+145 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "mongo-hacker"
+146 error node v5.0.0
+147 error npm  v3.3.6
+148 error code ELIFECYCLE
+149 error mongo-hacker@0.0.15 install: `make install`
+149 error Exit status 2
+150 error Failed at the mongo-hacker@0.0.15 install script 'make install'.
+150 error This is most likely a problem with the mongo-hacker package,
+150 error not with npm itself.
+150 error Tell the author that this fails on your system:
+150 error     make install
+150 error You can get their info via:
+150 error     npm owner ls mongo-hacker
+150 error There is likely additional logging output above.
+151 verbose exit [ 1, true ]
